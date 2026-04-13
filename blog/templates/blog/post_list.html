@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blog</title>
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <h1><a href="/">MyBlog</a></h1>
-    </header>
 
-    <article>
-      <h2><a href="">My First post</a></h2>
-      <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-      <time>published: 09/04/2026, 10:30:57</time>
-    </article>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog</title>
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
+</head>
 
-    <article>  
-      <h2><a href="">My Second post</a></h2>
-      <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-      <time>published: 09/04/2026, 10:30:57</time>
-    </article>
+<body>
+  <header>
+    <h1><a href="/">MyBlog</a></h1>
+  </header>
 
-  </body>
+  <h2> {{ posts }} </h2>
+
+
+  {% for post in posts %}
+  {{ post }}
+  <h1>olar</h1>
+  {% endfor %}
+
+</body>
+
 </html>
