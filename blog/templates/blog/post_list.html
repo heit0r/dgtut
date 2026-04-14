@@ -13,13 +13,14 @@
     <h1><a href="/">MyBlog</a></h1>
   </header>
 
-  <h2> {{ posts }} </h2>
-
 
   {% for post in posts %}
-  {{ post }}
-  <h1>olar</h1>
-  {% endfor %}
+    <article>
+      <h2><a href="">{{ post.title }}</a></h2>
+      <p>{{ post.text|linebreaksbr }}</p>
+      <time>published at {{ post.published_date }}</time>
+    </article>
+    {% endfor %}
 
 </body>
 
